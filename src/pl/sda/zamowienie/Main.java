@@ -39,10 +39,10 @@ public class Main {
 
 
     // dodaje kolejne pozycje do zamówienia
-    public static Zamowienie dodajPozycje() {
+    private static Zamowienie dodajPozycje() {
         Zamowienie tempZamowienie = new Zamowienie();
         Scanner wej = new Scanner(System.in);
-        int wybor = 0;
+        int wybor;
         do {
             //mini menu
             System.out.println("1. Dodaj chleby\n" +
@@ -73,14 +73,13 @@ public class Main {
     }
 
     // tworzy pozycję o zadanej ilości chlebów
-    public static Pozycja dodajChleb(int ilosc) {
-        Pozycja p1 = new Pozycja("Chleb", ilosc, 3.5);
-        return p1;
+    private static Pozycja dodajChleb(int ilosc) {
+        return new Pozycja("Chleb", ilosc, 3.5);
     }
 
     //tworzy pozycję o zadanej ilości cukru
-    public static Pozycja dodajCukier(int ilosc) {
-        Pozycja p1 = new Pozycja("Cukier", ilosc, 4);
-        return p1;
+    private static Pozycja dodajCukier(int ilosc) {
+        return new Pozycja("Cukier", ilosc, 4);
+
     }
 }
