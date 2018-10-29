@@ -46,8 +46,8 @@ public class Main {
         do {
             //mini menu
             System.out.println("1. Dodaj chleby\n" +
-                    "2. Dodaj cukier\n" +
-                    "0. Zakończ dodawanie\n");
+                               "2. Dodaj cukier\n" +
+                               "0. Zakończ dodawanie\n");
             wybor = wej.nextInt();
             switch (wybor) {
                 case 1:
