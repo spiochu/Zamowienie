@@ -9,17 +9,20 @@ public class Main {
         Zamowienie z = new Zamowienie(20);
         Scanner wej = new Scanner(System.in);
         //wyswietlenie mini menu
+        GUI.clearScreen();
         System.out.println("1. wczytaj zamówienie\n" +
                 "2. Utwórz nowe zamówienie");
         //Pobranie wyboru od urzytkownika
         int menu = wej.nextInt();
 
         if (menu == 1) {
+            GUI.clearScreen();
             //wyczytanie zamówienia z pliku "zamownieie.bin" oraz jego wyswietlenie
             z = Zamowienie.wczytajZamowienie("zamowienie");
             System.out.println(z);
 
         } else {
+            GUI.clearScreen();
             //stworzenie nowego zamówienie i zapianie go
             z = dodajPozycje();
             System.out.println(z);
@@ -66,6 +69,8 @@ public class Main {
                     break;
             }
             System.out.println("Pozycja dodana!!");
+            GUI.clearScreen();
+
 
         }
         while (wybor != 0) ;
